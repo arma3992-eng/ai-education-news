@@ -210,3 +210,100 @@ main section:first-child article > p {
 header h1 {
     font-size: 52px;
 }
+/* =========================
+   대표뉴스 슬라이드
+========================= */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.news-image {
+    height: 320px;
+    background-color: #e9ecef;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+    border-radius: 10px;
+
+    color: #666;
+}
+
+
+/* 슬라이드 아래 점 */
+
+.slider-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    margin: 0 6px;
+
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #222;
+}
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 46px;
+    height: 46px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
+
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 18px;
+}
+
+.next-btn {
+    right: 18px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+}

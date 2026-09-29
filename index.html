@@ -26,25 +26,80 @@
     <main>
 
         <!-- 오늘의 대표 교육뉴스 -->
-        <section>
-            <h2>오늘 꼭 알아야 할 교육뉴스</h2>
+        <section class="main-news">
+    <h2>오늘 꼭 알아야 할 교육뉴스</h2>
 
-            <article>
-                <div>
-                    <p>대표 영상 또는 이미지 영역</p>
+    <div class="slider">
+
+        <div class="slides">
+
+            <!-- 뉴스 1 -->
+            <article class="slide">
+                <div class="news-image">
+                    대표 이미지 1
                 </div>
 
                 <h3>2028 대입, 무엇이 달라질까?</h3>
 
                 <p>
-                    복잡한 교육뉴스를 학생과 학부모가
-                    이해하기 쉽게 2분 안에 정리합니다.
+                    복잡한 대입제도 변화를 학생과 학부모가
+                    이해하기 쉽게 정리합니다.
                 </p>
 
                 <button>2분 영상 보기</button>
                 <button>핵심요약 읽기</button>
             </article>
-        </section>
+
+
+            <!-- 뉴스 2 -->
+            <article class="slide">
+                <div class="news-image">
+                    대표 이미지 2
+                </div>
+
+                <h3>학교에서 생성형 AI를 어떻게 사용할까?</h3>
+
+                <p>
+                    학생과 교사가 알아야 할
+                    생성형 AI 활용 방법을 정리합니다.
+                </p>
+
+                <button>2분 영상 보기</button>
+                <button>핵심요약 읽기</button>
+            </article>
+
+
+            <!-- 뉴스 3 -->
+            <article class="slide">
+                <div class="news-image">
+                    대표 이미지 3
+                </div>
+
+                <h3>새롭게 바뀌는 학교 교육정책</h3>
+
+                <p>
+                    학생과 학부모가 알아야 할
+                    학교 교육정책의 변화를 설명합니다.
+                </p>
+
+                <button>2분 영상 보기</button>
+                <button>핵심요약 읽기</button>
+            </article>
+
+        </div>
+
+
+        <!-- 슬라이드 위치 표시 -->
+         <button class="prev-btn">&#10094;</button>
+<button class="next-btn">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+</section>
 
 
         <!-- 오늘의 핵심 뉴스 3개 -->
@@ -146,6 +201,6 @@
         <p>AI 교육뉴스</p>
         <p>복잡한 교육뉴스를 2분 안에 쉽게 설명합니다.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
