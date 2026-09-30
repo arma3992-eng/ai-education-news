@@ -442,3 +442,189 @@ header h1 {
 .news-list li:last-child {
     margin-bottom: 0;
 }
+/* =========================
+   기사 상세페이지
+========================= */
+
+.article-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 30px 100px;
+}
+
+.article-page .back-link {
+    display: inline-block;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+.article-page .back-link:hover {
+    text-decoration: underline;
+}
+
+.article-header {
+    padding-bottom: 35px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-category {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #315f8c;
+}
+
+.article-header h1 {
+    margin: 0 0 25px;
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.article-summary {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.article-content h2 {
+    margin-top: 50px;
+    margin-bottom: 18px;
+    font-size: 27px;
+}
+
+.article-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+
+    .article-page {
+        padding: 35px 20px 70px;
+    }
+
+    .article-header h1 {
+        font-size: 30px;
+    }
+
+    .article-summary {
+        font-size: 17px;
+    }
+
+    .article-content h2 {
+        font-size: 23px;
+    }
+
+    .article-content p {
+        font-size: 16px;
+    }
+}
+/* =========================
+   기사 핵심 체크
+========================= */
+
+.article-check,
+.audience-section,
+.article-sources {
+    margin-top: 70px;
+}
+
+.article-check h2,
+.audience-section h2,
+.article-sources h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.check-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.check-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.check-item strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #666;
+}
+
+.check-item span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* =========================
+   학생 / 학부모 / 교사
+========================= */
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.audience-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.audience-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+
+.audience-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* =========================
+   출처
+========================= */
+
+.article-sources {
+    padding-top: 35px;
+    border-top: 1px solid #ddd;
+}
+
+.article-sources ul {
+    padding-left: 20px;
+}
+
+.article-sources li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+
+    .check-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

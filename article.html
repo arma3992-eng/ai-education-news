@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교육뉴스 기사</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="article-page">
+
+        <a href="index.html" class="back-link">← 교육뉴스 메인으로</a>
+
+        <section class="article-header">
+            <p class="article-category" id="articleCategory"></p>
+
+            <h1 id="articleTitle"></h1>
+
+            <p class="article-summary" id="articleSummary"></p>
+        </section>
+
+        <section class="article-content" id="articleContent"></section>
+
+        <section class="article-check">
+
+            <h2>한눈에 보는 핵심 체크</h2>
+
+            <div class="check-grid" id="articleChecklist"></div>
+
+        </section>
+
+        <section class="audience-section">
+
+            <h2>그래서 나는 무엇을 알아야 할까?</h2>
+
+            <div class="audience-grid">
+
+                <article class="audience-card">
+                    <h3>학생</h3>
+                    <p id="studentContent"></p>
+                </article>
+
+                <article class="audience-card">
+                    <h3>학부모</h3>
+                    <p id="parentContent"></p>
+                </article>
+
+                <article class="audience-card">
+                    <h3>교사</h3>
+                    <p id="teacherContent"></p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="article-sources">
+
+            <h2>출처</h2>
+
+            <ul id="articleSources"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="article.js"></script>
+
+</body>
+</html>
